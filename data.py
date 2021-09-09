@@ -1,21 +1,9 @@
-data_distribution = {
+
+datadist= {
     "labels":['محمد عبو  ','قيس سعيد  ', 'عبير موسي', 'راشد الغنوشي','الصافي سعيد','يوسف الشاهد','هشام المشيشي '
   ,'ياسين العياري','سيف الدين المخلوف','فيصل التبيني'],
+    "influence":['6','1', '2', '5','4','8','3','9','7','10'],
   "data":[342, 518, 564, 662, 313, 355, 461,499,502,506]
-}
-
-topicmodeling={
-  "Labels": ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
-  "data":[
-      { 
-        "values": [65, 59, 90, 81, 56, 55, 40], 
-        "label": 'Series A'
-         },
-    { 
-      "values": [28, 48, 40, 19, 96, 27, 100], 
-      "label": 'Series B' 
-      }
-  ]
 }
 
 accuracy=[
@@ -42,14 +30,14 @@ accuracy=[
       },
        {
     "algo":"Long Short-Term Memory",
-    "acc":0.92,
+    "acc":0.93,
     "err":0
       }
 ]
 
 comparaison={
-   "labels":  ['naive bayes','support vector machine','random forest','logistic regression','long short term memory'],
- "data": [0.58,0.61,0.63,0.65,0.92]
+   "labels":  ['naive bayes','random forest','logistic regression','support vector machine','long short term memory'],
+ "data": [0.58,0.61,0.63,0.65,0.93]
 }
 
 persondist = {
@@ -61,3 +49,28 @@ influencedist={
 "labels":['1','2','3','5','6','4','7','8','9','10'],
 "data" : [7,11, 12, 14,6,8,10,11,11,11]
 }
+topfrequentwords={
+"labels":['رئيس','تونس','الحكومة','الشعب','مجلس','نواب','الدولة','الجمهورية','سعيد','التونسي','التونسية','الغنوشي','السيد','العام','الوطنية','المجلس','القانون','راشد','وزير','البرلمان','الناءب','الاستاذ','النهضة','السياسية','هشام','قيس','العمومية','الوطني','قانون','التعاون'],
+"data":[877,565,495,478,340,337,288,225,218,212,182,178,176,175,163,157,150,134,132,129,129,127,126,122,120,119,118,116,113,112]
+}
+
+
+
+
+
+
+
+topicmodeling={
+  "Labels": ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  "data":[
+      { 
+        "values": [65, 59, 90, 81, 56, 55, 40], 
+        "label": 'Series A'
+         },
+    { 
+      "values": [28, 48, 40, 19, 96, 27, 100], 
+      "label": 'Series B' 
+      }
+  ]
+}
+
